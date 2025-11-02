@@ -1,5 +1,6 @@
 <template>
-  <footer class="border-t mt-16 p-6 text-sm text-gray-600">
-    © {{ new Date().getFullYear() }} MediaMarkt clone
+  <footer class="border-t py-6 mt-10 text-center text-gray-600 text-sm">
+    <p>© 2025 MediaMarkt Clone — All rights reserved.</p>
+    <p class="mt-1">Designed for educational use — Vue 3 + Atomic Design demo</p>
   </footer>
 </template>

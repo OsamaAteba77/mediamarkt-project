@@ -4,20 +4,26 @@ import SearchBar from '@/components/molecules/SearchBar.vue'
 </script>
 
 <template>
-  <header class="bg-white border-b shadow-sm px-4 py-3 flex items-center justify-between gap-4">
-    <AppLogo />
-    <SearchBar />
-    <nav class="flex items-center gap-3">
-      <a href="#" class="text-sm hover:underline">Login</a>
-      <a href="#" class="text-sm hover:underline">Cart</a>
-    </nav>
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
+      <AppLogo />
+
+      <!-- center: search -->
+      <div class="flex-1">
+        <SearchBar />
+      </div>
+
+      <!-- right: actions -->
+      <nav class="flex items-center gap-5">
+        <router-link to="/login" class="text-sm hover:underline">Login</router-link>
+        <router-link to="/cart" class="text-sm hover:underline">Cart</router-link>
+      </nav>
+    </div>
   </header>
 </template>
-
 <style scoped>
-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
+.router-link-active {
+  font-weight: 600;
+  text-decoration: underline;
 }
 </style>
