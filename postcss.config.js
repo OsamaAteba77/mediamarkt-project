@@ -1,8 +1,6 @@
-// postcss.config.js
+/* eslint-env node */
 export default {
-  // The plugins array must be an object { pluginName: options }
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    '@tailwindcss/postcss': {}, // plugin now exists after install
   },
 }
