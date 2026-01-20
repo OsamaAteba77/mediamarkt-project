@@ -27,7 +27,7 @@ const cartCount = computed(() => cartStore.count);
 
 /* ====== AUTH STATE (NEW) ====== */
 const currentUser = ref<any>(null);
-const isUserMenuOpen = ref(false); // Controls the dropdown for logged-in users
+const isUserMenuOpen = ref(false);  
 
 // Menu Items
 const menuItems = [
@@ -44,7 +44,7 @@ const getCategoryLink = (item: string) => {
 const storeModalOpen = ref(false)
 const storeQuery = ref('')
 
-// 3. THE FIX: Force close menus when route changes
+ 
 watch(() => route.fullPath, () => {
   closeAll()
 });
@@ -76,7 +76,7 @@ function setActiveNav(k: NavKey) {
   activeNav.value = k
 }
 
-/* ====== menu drawer left list ====== */
+ 
 // Use data from API
 const menuLeftItems = computed(() => headerData.value?.menuLeftItems || [])
 
@@ -114,7 +114,7 @@ function closeStoreModal() {
   unlockScrollIfNoOverlay()
 }
 
-// === FIX: ROBUST USER ICON HANDLER ===
+ 
 function handleUserIconClick() {
   // If user is logged in -> Toggle Dropdown
   if (currentUser.value) {
@@ -125,7 +125,7 @@ function handleUserIconClick() {
   }
 }
 
-// CLICK OUTSIDE TO CLOSE DROPDOWN
+ 
 function handleClickOutside(event: MouseEvent) {
   const target = event.target as HTMLElement
   if (isUserMenuOpen.value && !target.closest('.user-container')) {

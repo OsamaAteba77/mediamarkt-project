@@ -166,7 +166,7 @@ const isOpen = (key: string): boolean => !!openState[key]
           </div>
         </div>
 
-        <!-- row-3 (ONLY marketplace here, no delivery here anymore) -->
+        <!-- row-3  marketplace here -->
         <div class="main-grid row-3">
           <div class="f-col">
             <div class="acc-group">
@@ -177,13 +177,13 @@ const isOpen = (key: string): boolean => !!openState[key]
             </div>
           </div>
 
-          <!-- keep second column empty on desktop grid to preserve original spacing -->
+         
           <div class="f-col"></div>
         </div>
       </div>
     </div>
 
-    <!-- 2) WHITE SECTION (FIXED ORDER + APP UNDER THEM) -->
+    <!-- 2) WHITE SECTION  -->
     <div class="footer-white">
       <div class="container">
         <div class="white-grid">
@@ -271,7 +271,7 @@ a:hover { color: #df0000; text-decoration: none; }
 .top-brands { display: flex; gap: 24px; align-items: center; }
 
 /* BIGGER brand logos (Blindlook + Daha iyiye) */
-.brand-img { height: 70px; width: auto; } /* was 26px */
+.brand-img { height: 70px; width: auto; } 
 
 /* GRID SYSTEM */
 .main-grid {
@@ -335,7 +335,7 @@ a:hover { color: #df0000; text-decoration: none; }
 .logos-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
 .log-img { height: 18px; width: auto; }
 
-/* 2) WHITE SECTION (FIXED) */
+/* 2) WHITE SECTION  */
 .footer-white { background: #fff; padding: 40px 0; }
 
 .white-grid{
@@ -384,7 +384,7 @@ a:hover { color: #df0000; text-decoration: none; }
 .etbis-wrap { display: flex; justify-content: flex-end; margin-top: 20px; }
 .etbis-img { height: 70px; width: auto; }
 
-/* DESKTOP: keep bodies open */
+ 
 @media (min-width: 769px) {
   .f-body { display: block !important; }
 }

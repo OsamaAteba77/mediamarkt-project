@@ -11,7 +11,7 @@ const props = defineProps<Props>();
 
 // Slider State
 const currentIndex = ref(0);
-const itemsPerPage = 4; // Show 4 items at a time
+const itemsPerPage = 4;  
 const maxIndex = computed(() => Math.max(0, props.products.length - itemsPerPage));
 
 const next = () => { if (currentIndex.value < maxIndex.value) currentIndex.value++; };

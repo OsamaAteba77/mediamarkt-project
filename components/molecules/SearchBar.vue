@@ -3,7 +3,7 @@ const query = ref('');
 
 const handleSearch = () => {
   console.log('Searching for:', query.value);
-  // Future: Navigate to search results
+  
 };
 </script>
 
